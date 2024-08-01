@@ -1,0 +1,60 @@
+/* .navbar.fixed-top {
+    box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
+    padding: 10px 250px;
+    font-size: 20px;
+    background-color: #2C3E50; 
+}
+
+
+.navbar-nav .nav-link {
+    color: #FFFFFF; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B0BEC5;
+}
+ */
+
+
+ /* Header background and shadow */
+.navbar.fixed-top {
+    box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
+    padding: 10px 15px; /* Reduced padding for smaller screens */
+    font-size: 20px;
+    background-color: #2C3E50; /* Dark Blue */
+}
+
+.navbar-brand{
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .navbar.fixed-top {
+        padding: 10px 100px; /* Increase padding for tablets */
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar.fixed-top {
+        padding: 10px 250px; /* Full padding for desktops */
+    }
+}
+
+/* Navbar link color */
+.navbar-nav .nav-link {
+    color: #FFFFFF; /* White */
+}
+
+/* Navbar link color on hover */
+.navbar-nav .nav-link:hover {
+    color: #B0BEC5; /* Light Grey for hover effect (optional) */
+}
+
+/* Navbar toggle button for mobile */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

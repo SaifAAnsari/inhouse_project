@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './component/header'
+import Footer from './component/footer'
+import Body from './component/body'
 
 function App() {
   return (
-    // <div className="App">
-      <>
-      <h1>Personal Project</h1>
-
-      </>
-    // </div>
+    <>
+    <Header/>
+    <Body/>
+    <Footer/>
+</>
   );
 }
 
