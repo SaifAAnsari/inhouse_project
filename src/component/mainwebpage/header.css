@@ -1,0 +1,134 @@
+/* .navbar.fixed-top {
+    box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
+    padding: 10px 250px;
+    font-size: 20px;
+    background-color: #2C3E50; 
+}
+
+
+.navbar-nav .nav-link {
+    color: #FFFFFF; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B0BEC5;
+}
+ */
+
+
+ /* Header background and shadow */
+.navbar.fixed-top {
+    box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
+    padding: 10px 15px; /* Reduced padding for smaller screens */
+    font-size: 20px;
+    background-color: #2C3E50; /* Dark Blue */
+}
+
+/* Navbar brand color */
+.navbar-brand {
+    color: #FFFFFF;
+    position: relative;
+}
+
+/* Increase padding for tablets */
+@media (min-width: 768px) {
+    .navbar.fixed-top {
+        padding: 10px 100px;
+    }
+}
+
+/* Full padding for desktops */
+@media (min-width: 992px) {
+    .navbar.fixed-top {
+        padding: 10px 250px;
+    }
+}
+
+/* Navbar link color */
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Custom underline on hover for navbar links */
+.navbar-nav .nav-link::before, 
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    background-color: #B0BEC5;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link::before {
+    left: 50%;
+    width: 0;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    right: 50%;
+    width: 0;
+    transition: right 0.3s ease, width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 50%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 50%;
+    right: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B0BEC5; /* Change color on hover */
+}
+
+/* Custom underline on hover for navbar brand */
+.navbar-brand::before, 
+.navbar-brand::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    background-color: #B0BEC5;
+    transition: width 0.3s ease;
+}
+
+.navbar-brand::before {
+    left: 50%;
+    width: 0;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.navbar-brand::after {
+    right: 50%;
+    width: 0;
+    transition: right 0.3s ease, width 0.3s ease;
+}
+
+.navbar-brand:hover::before {
+    width: 50%;
+    left: 0;
+}
+
+.navbar-brand:hover::after {
+    width: 50%;
+    right: 0;
+}
+.navbar-brand:hover {
+    color: #B0BEC5; /* Change color on hover */
+}
+
+/* Navbar toggle button for mobile */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

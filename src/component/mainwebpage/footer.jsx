@@ -8,7 +8,7 @@ const Footer = () => {
     <>
     <footer className="text-center  mt-5">
       <div className="footercontainer">
-        <p>&copy; {new Date().getFullYear()} Indian Textile Group. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} HMS Textile Group. All Rights Reserved.</p>
         
       </div>
     </footer>
