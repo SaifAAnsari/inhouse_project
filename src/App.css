@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,41 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer {
+  background-color: #2C3E50;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 0;
+}
+
+.footercontainer {
+  color: #FFFFFF;
 }
