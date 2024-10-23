@@ -65,6 +65,13 @@ const Contact = () => {
     <div className="container">
       <section className="my-5">
         <h2 className="section-title">Contact Us</h2>
+        
+        {/* Notification message at the top */}
+        {notification.message && (
+          <div className={`notification ${notification.type}`}>
+            {notification.message}
+          </div>
+        )}
 
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -101,12 +108,6 @@ const Contact = () => {
             ></textarea>
           </div>
           <button type="submit" className="btn btn-primary">Submit</button>
-          {/* Notification message */}
-        {notification.message && (
-          <div className={`notification ${notification.type}`}>
-            {notification.message}
-          </div>
-        )}
         </form>
       </section>
     </div>
