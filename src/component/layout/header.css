@@ -1,16 +1,19 @@
 .navbar.fixed-top {
     box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
-    padding: 10px 15px; 
+    padding: 10px 15px;
     font-size: 20px;
-    background-color: #2C3E50; 
+    background-color: #2C3E50;
 }
-
 
 .navbar-brand {
-    color: #000000;
+    color: #ffffff;
     position: relative;
+    display: inline-block;
 }
 
+.navbar-brand:hover {
+    color: #B0BEC5;
+}
 
 @media (min-width: 768px) {
     .navbar.fixed-top {
@@ -27,78 +30,31 @@
 .navbar-nav .nav-link {
     color: #FFFFFF;
     position: relative;
-    overflow: hidden;
-}
-
-.navbar-nav .nav-link::before, 
-.navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    bottom: 0;
-    background-color: #B0BEC5;
-    transition: width 0.3s ease;
-}
-
-.navbar-nav .nav-link::before {
-    left: 50%;
-    width: 0;
-    transition: left 0.3s ease, width 0.3s ease;
-}
-
-.navbar-nav .nav-link::after {
-    right: 50%;
-    width: 0;
-    transition: right 0.3s ease, width 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover::before {
-    width: 50%;
-    left: 0;
-}
-
-.navbar-nav .nav-link:hover::after {
-    width: 50%;
-    right: 0;
+    display: inline-block;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #B0BEC5; 
+    color: #B0BEC5;
 }
 
-.navbar-brand::before, 
-.navbar-brand::after {
+
+.navbar-nav .nav-link::after {
     content: '';
     position: absolute;
+    width: 0;
     height: 2px;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #B0BEC5;
     transition: width 0.3s ease;
 }
 
-.navbar-brand::before {
-    left: 50%;
-    width: 0;
-    transition: left 0.3s ease, width 0.3s ease;
+.navbar-brand:hover::after{
+    width: 100%;
 }
-
-.navbar-brand::after {
-    right: 50%;
-    width: 0;
-    transition: right 0.3s ease, width 0.3s ease;
-}
-
-.navbar-brand:hover::before {
-    width: 50%;
-    left: 0;
-}
-
-.navbar-brand:hover::after {
-    width: 50%;
-    right: 0;
-}
-.navbar-brand:hover {
-    color: #B0BEC5; 
+.navbar-nav .nav-link:hover::after {
+    width: 83%; 
 }
 
 .navbar-toggler {
@@ -107,6 +63,7 @@
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}/* Define styles for active link */
+}
 
-  
+
+
